@@ -1,5 +1,6 @@
 
 import './App.css'
+import Grandpa from './compoonents/Grandpa/Grandpa';
 // import HookForm from './compoonents/HookForm/HookForm'
 import ReuseableForm from './compoonents/ReuseableForm/ReuseableForm'
 // import RefForm from './compoonents/RefForm/RefForm'
@@ -21,21 +22,22 @@ const handleUpdateProfile = data => {
 
   return (
     <>
-      <h1>Vite + React</h1>
+      <h1>FORM MASTER</h1>
+      <Grandpa></Grandpa>
       {/* <SimpleForm></SimpleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefForm></RefForm> */}
       {/* <HookForm></HookForm> */}
-      <ReuseableForm formTitle={'Sign UP'} handleSubmit={handleSignUpSubmit}> <div>
+      {/* <ReuseableForm formTitle={'Sign UP'} handleSubmit={handleSignUpSubmit}> <div>
         <h2>Sign Up</h2>
         <p>Please sign up right now</p>
-        </div></ReuseableForm>
-      <ReuseableForm formTitle={'Profile Update'} handleSubmit={handleUpdateProfile} submitBtnText='Update'>
+        </div></ReuseableForm> */}
+      {/* // <ReuseableForm formTitle={'Profile Update'} handleSubmit={handleUpdateProfile} submitBtnText='Update'>
           <div>
             <h2>Update Profile</h2>
             <p>Always keep your profile update</p>
           </div>
-      </ReuseableForm>
+      </ReuseableForm> */}
     </>
   )
 }
